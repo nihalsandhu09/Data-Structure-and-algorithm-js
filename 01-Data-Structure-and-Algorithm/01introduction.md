@@ -1,0 +1,2 @@
+what is data structure >>> Data structure are storage models which help us to store data in efficientt manner for different use cases 
+what is algorithms >>>>>>> defined steps to help us to achieve a task is called algorithms 
