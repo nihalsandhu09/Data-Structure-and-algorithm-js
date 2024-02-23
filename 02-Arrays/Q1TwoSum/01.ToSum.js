@@ -22,8 +22,8 @@ Input: nums = [3,3], target = 6
 Output: [0,1] */
 
 
-// what approach should we follow to solve this Peoblem 
-// lets irst understand what is the question 
+// what approach should we follow to solve this Problem 
+// lets first understand what is the question 
 // we have an array on n numbers we have to return a pair of array from this array that sum is equalll to given target 
 
 // nums = [2,7,11,15]  target = 9 
@@ -31,17 +31,33 @@ Output: [0,1] */
 // we have to return pair that addition is equall to given target 
 // brute force solution 
 
-function twosum(nums , taregt){
+// function twosum(nums , taregt){
  
-    let n = nums.length
-  for(let i =0; i<n-2;i++){
-    for(let j = i+1;j<n;j++){
-        if(nums[i] +nums[j] === taregt){
-            return [i,j]
-        }
+//     let n = nums.length
+//   for(let i =0; i<n-2;i++){
+//     for(let j = i+1;j<n;j++){
+//         if(nums[i] +nums[j] === taregt){
+//             return [i,j]
+//         }
+//     }
+//   }
+
+// }
+
+// console.log(twosum([2,7,11,15] , 9 ))  // here our brute force solution 
+
+
+function containsDuplcate(nums){
+  let n = nums.length;
+
+  for(let i=0;i<n-2;i++){
+    for(let j = i+1;j<n-1;j++){
+      if(nums[i] === nums[j]){
+        return true;
+      }else{
+        return false;
+      }
     }
   }
-
 }
-
-console.log(twosum([2,7,11,15] , 9 ))  // here our brute force solution 
+console.log(containsDuplcate([1,2,3,1]))
