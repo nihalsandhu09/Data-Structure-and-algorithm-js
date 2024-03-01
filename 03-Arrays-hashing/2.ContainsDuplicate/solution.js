@@ -53,3 +53,33 @@ var containsDuplicate = function(nums) {
 console.log(containsDuplicate([1,2,3,1]))
 console.log(containsDuplicate([1,2,3,1]))
 console.log(containsDuplicate([1,2,3,1]))
+
+
+
+
+// using hashing 
+
+
+var containsDuplicate = function(nums) { 
+     
+         const mp = {}
+
+         for(let num of nums){
+            if(mp[num]){
+                return true;
+            }
+         }
+     
+
+
+   
+      
+    
+        
+     
+ 
+     
+ 
+ 
+     
+}
