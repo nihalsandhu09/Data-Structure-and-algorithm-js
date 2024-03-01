@@ -62,18 +62,18 @@ console.log(containsDuplicate([1,2,3,1]))
 
 var containsDuplicate = function(nums) { 
      
-         const mp = {}
-
-         for(let num of nums){
-            if(mp[num]){
-                return true;
-            }
-         }
-     
+        
 
 
    
-      
+         let seen = new Map();
+         for (let num of nums) {
+             if (seen.has(num)) {
+                 return true; // Duplicate found
+             }
+             seen.set(num, true);
+         }
+         return false; 
     
         
      
