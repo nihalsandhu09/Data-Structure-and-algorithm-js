@@ -47,6 +47,7 @@ while(i<m){
     nums1[k] = result[k]
     k++;
  }
+ return result;
 };
 
 
