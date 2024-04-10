@@ -32,7 +32,7 @@ var isPerfectSquare = function(num) {
     if(num === 1 ) return true ; 
   
     let left = 1;
-    let right = Math.floor(num / 2); 
+    let right = Math.floor(num / 2); // we will take right as half becuase we know that the square root will be less than or equal to half of the number 
     while(left <= right){
       let mid = left + Math.floor((right  - left) / 2);
       let square = mid* mid;
