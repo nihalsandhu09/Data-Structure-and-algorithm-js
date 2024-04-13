@@ -20,9 +20,9 @@ var minEatingSpeed = function(piles, h) {
    
          if(canEatAllbananasInMidSpeed(piles, h ,mid)){
             ans = mid
-            high = mid - 1
+            high = mid - 1 // decreasing the speed 
          }else{
-            low = mid + 1;
+            low = mid + 1; // increasing the speed 
          }
     }
     return ans
