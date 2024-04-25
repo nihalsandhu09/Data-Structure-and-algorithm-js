@@ -15,3 +15,9 @@ var fib = function(n) {
      dp = Array(100005).fill(-1);
        return f(n);
 };
+
+
+
+
+
+// bottom up solution 
