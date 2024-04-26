@@ -14,7 +14,7 @@
 //   }
 // }
 
-
+// bottom up
 class Solution {
   public static int[] dp = new int[100005];
   public static int f(int i){
